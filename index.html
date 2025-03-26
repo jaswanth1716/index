@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        /* Basic Reset & Typography */
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #0c0a0a;
+        }
+
+        /* Responsive Grid Layout */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .col-md-6 {
+            width: 100%; /* Default to full width on small screens */
+        }
+
+        @media (min-width: 768px) {
+            .col-md-6 {
+                width: 48%; /* Adjust for medium screens */
+            }
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: #0e0b0b;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2f13aa;
+            font-weight: 600;
+        }
+
+        /* Hero Section */
+        #hero {
+            text-align: center;
+            padding: 100px 0;
+            background-color: #940e0e;
+        }
+
+        #hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* About Section */
+        #about {
+            padding: 80px 0;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: #5c713a;
+            padding: 80px 0;
+        }
+
+        .project {
+            margin-bottom: 30px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        /* Skills Section */
+        #skills {
+            padding: 80px 0;
+        }
+
+        #skills ul {
+            list-style: none;
+        }
+
+        #skills li {
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #e0af62;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        #contact input, #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #4f5902;
+            border-radius: 5px;
+        }
+
+        #contact button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: rgb(171, 228, 222);
+        }
+        .social-links {
+          margin-top:20px;
+        }
+        .social-links a{
+          margin: 0 10px;
+          color: rgb(237, 78, 10);
+          text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Hello, I'm Saddapalli Jaswanth Reddy!</h1>
+            <p>A passionate to solve real-world problems, constantly exploring new coding languages, and developing innovative software solutions. .</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I’m Jaswanth Reddy , a Computer Science and Engineering (CSE) student in Sathayabama institute of science and technology with a strong foundation in technical skills and a passion for machine learning. Over the course of my studies, I’ve had the opportunity to work on several exciting projects, including Phishing Detection, Restaurant Management, and Cardiovascular Prediction, where I applied my knowledge of Python, HTML, and Java to solve real-world problems. These projects helped me hone my technical skills and reinforced my problem-solving abilities.
+
+                In addition to my technical expertise, I have developed strong soft skills, such as effective communication and proficiency in English, which have been key to my success in team collaborations and presenting my ideas clearly. My passion lies in pursuing a Master’s in Machine Learning, where I hope to expand my knowledge and contribute to advancements in the field.
+                
+                Through my academic journey and personal projects, I’ve gained valuable experience in both technical and soft skills, and I’m eager to continue learning and applying my abilities in the world of machine learning and AI.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="row">
+                <div class="col-md-6 project">
+                    <h3>Project 1 : Reasturant recomandation</h3>
+                    <p>A restaurant recommendation system is a tool or algorithm designed to suggest restaurants to users based on their preferences, location, past behavior, or reviews. It typically uses data such as cuisine type, ratings, price range, user reviews, and location to provide personalized suggestions, helping users discover dining options that best suit their tastes and needs.</p> .</p>
+                    <a href="https://github.com/jaswanth1716/Restaurant-Recomandation" class="btn" target="_blank">View Project</a>
+                </div>
+                <div class="col-md-6 project">
+                    <h3>Project 2 : Cardio Vascular Prediction</h3>
+                    <p>Cardiovascular prediction refers to the use of data and machine learning models to predict the likelihood of an individual developing heart-related conditions, such as heart attacks, strokes, or other cardiovascular diseases.</p>
+                    <a href="https://github.com/jaswanth1716/Cardio-Vascular-Predicton" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>java</li>
+                <li>Dbms</li>
+                <li>c/c++</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="formMessage" style="display: none; margin-top: 10px;"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/jaswanth-reddy-2ba449244/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/jaswanth1716" target="_blank">GitHub</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const formData = new FormData(form);
+
+            setTimeout(function() {
+                document.getElementById('formMessage').textContent = 'Message sent successfully!';
+                document.getElementById('formMessage').style.color = 'green';
+                document.getElementById('formMessage').style.display = 'block';
+                form.reset();
+            }, 500);
+        });
+    </script>
+</body>
+</html>
